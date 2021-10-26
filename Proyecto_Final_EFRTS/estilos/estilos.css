@@ -1,0 +1,218 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+body{
+    
+}
+header{
+    
+    padding-bottom: 50px;
+    background-color: whitesmoke;
+    animation: EfectosX 0.75s;
+}
+#superior-header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#buscador{
+    margin: 20px;
+    animation: EfectosY 5s;
+}
+#logo img{
+    width: 100%;
+    
+}
+#logo{
+    width: 12%;
+    margin-left: 15px;
+    margin-top: 10px;
+    animation: EfectosX 6s;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    margin: -50px 0;
+    
+}
+
+nav ol a{
+    display: inline-block;
+    padding: 20px 40px;
+    text-decoration: none;
+    
+    margin: 0px -3px;
+    
+}
+nav ol a:hover{
+    color: rebeccapurple;
+    transition: 1s;
+}
+
+#carrusel{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#banner{
+    width: 100%;
+    height: 100%;
+    
+}
+#titulobanner, .banner-titulo-derecho{
+    z-index: 1;
+    position: relative;
+    bottom: 150px;
+    float: right;
+    right: 150px;
+    height: 0;
+    color: white;
+    text-align: center;
+    width: 60px;
+}
+.ban-descri{
+    position: relative;
+    bottom: 80px;
+    color: whitesmoke;
+    float: right;
+    right: 100px;
+    text-align: center;
+}
+.centrar{
+    margin: auto;
+    width: 100%;
+    margin: -25px 0;
+}
+.index-img{
+    width: 100%;
+    height: 200px;
+    transition:all 0.4s ease-out;
+    z-index: 1;
+    
+}
+/*
+.index-img:hover{
+    transition: 1s;
+    z-index: -1;
+    object-fit: cover;
+    
+}
+*/
+.boton-img{
+    position: relative;
+    bottom: 50px;
+    right: 50%;
+    left: 50%;
+    color: blueviolet;
+}
+
+#blog-index{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+.blog-vertical{
+    width: 350px;
+    height: 525px;
+    border: 1px solid black;
+
+}
+.blog-horinzotal{
+    width: 700px;
+    height: 250px;
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+.sombreado{
+    box-shadow: 0px 0px 5.5px 0px black;
+}
+.sombreado:hover{
+    box-shadow: 0px 0px 10px 0px black;
+    transition: 0.5s;
+}
+
+.centrar-texto{
+    text-align: center;
+    margin: 5px auto;
+}
+.flex-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.parrafo{
+    margin: 0 50px;
+}
+.flex-horinzotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.blog-flecha{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    color: black;
+}
+
+
+
+/*          Estilos de enlace     */
+.enlaces{
+    text-decoration: none;
+}
+.enlaces:link{
+    color: orange;
+}
+.enlaces:visited{
+    color: orange;
+}
+.enlaces:hover{
+    color: rebeccapurple;
+    transition: 0.5s;
+
+}
+.enlaces:active{
+    color:orange;
+}
+.redes{
+    font-size: 40px;
+}
+
+footer{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+
+/*Este transition es de a de vueltas de izquierda y derecha*/
+@keyframes EfectosY{
+    from{
+        opacity: 0;
+        transform: rotateY(-50deg);
+        
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(0);
+        
+    }
+}
+@keyframes EfectosX{
+    from{
+        opacity: 0;
+        transform: rotateX(-50deg);
+        
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+        
+    }
+}
