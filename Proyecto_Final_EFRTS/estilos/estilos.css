@@ -183,6 +183,37 @@ nav ol a:hover{
     font-size: 40px;
 }
 
+
+/*          Pagina  Lugares  */
+
+.derecha-div{
+    margin: 20px;
+    width: 50%;
+    height: 400px;
+    
+}
+.izqui-div{
+    margin: -100px auto 0 auto;
+    width: 35%;
+    font-size: 20px;
+}
+.derecha-div img{
+    width:100%;
+    height: 100%;
+}
+
+
+.titulos{
+    text-align: center;
+    margin: 25px 0;
+}
+.lugares-section{
+    margin: 60px auto;
+}
+h4{
+    text-align: center;
+    margin: 20px 0;
+}
 footer{
     background-color: whitesmoke;
     display: flex;
