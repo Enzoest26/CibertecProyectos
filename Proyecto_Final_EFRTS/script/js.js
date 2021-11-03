@@ -7,12 +7,12 @@ let tituloCarrusel = [
     "Cuzco",
     "Lima",
     "Arequipa"
-]
+];
 let descriCarrusel = [
     "Maravillas mundial",
     "Ciudad de la gastronimía",
     "La ciudad Blanca"
-]
+];
 console.log(imgCarrusel[0]);
 var i = 0;
 var imgs = document.getElementById("banner");
@@ -45,4 +45,7 @@ function contenidoCarrusel(div1,div2,array1,array2) {
     div2.innerHTML = array2[i];   
     
 }
-window.document.onload(indexCarrusel())
+window.document.onload(indexCarrusel());
+
+//Efecto del scroll
+

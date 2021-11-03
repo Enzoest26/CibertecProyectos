@@ -143,6 +143,8 @@ nav ol a:hover{
 }
 .parrafo{
     margin: 0 50px;
+    width: 70%;
+    text-justify: justify;
 }
 .flex-horinzotal{
     display: flex;
@@ -184,23 +186,6 @@ nav ol a:hover{
 }
 
 
-/*          Pagina  Lugares  */
-
-.derecha-div{
-    margin: 20px;
-    width: 50%;
-    height: 400px;
-    
-}
-.izqui-div{
-    margin: -100px auto 0 auto;
-    width: 35%;
-    font-size: 20px;
-}
-.derecha-div img{
-    width:100%;
-    height: 100%;
-}
 
 
 .titulos{
@@ -208,12 +193,83 @@ nav ol a:hover{
     margin: 25px 0;
 }
 .lugares-section{
-    margin: 60px auto;
+    margin: 30px auto;
+    opacity: 1;
+    background-color: white;
+    width: 97%;
+    border-radius: 15%;
 }
 h4{
     text-align: center;
     margin: 20px 0;
 }
+
+
+
+
+/*         ! Paginas Nosotros         */
+.flex-horinzotal > img{
+    width: 50%;
+    margin: 20px auto;
+}
+
+.tamaño-nosotros > img{
+    width: 200px;
+}
+.id-nosotros{
+    justify-content: space-evenly;
+    margin: 100px auto;
+}
+.id-nosotros > p{
+    width: 20%;
+}
+
+.animacion-scroll{
+    
+}
+/*          Pagina  Lugares  */
+
+.img_div{
+    margin: 150px 0px 0 200px;
+    width: 50%;
+    height: 400px;
+    
+}
+.texto_div{
+    margin: -80px 0px;
+    width: 35%;
+    font-size: 20px;
+}
+.img_div img{
+    width:60%;
+    height: 60%;
+}
+
+
+.section_lugares{
+    display:flex;
+    
+}
+.carta_fondo{
+    position: relative;
+    width: 0;
+    z-index: 0;
+    margin: 0 auto;
+    left: 120px;
+}
+.carta_fondo > img{
+    width: 1000px;
+    height: 500px;
+}
+.grado{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.grado > img{
+    margin-left: 100px;
+}
+
 footer{
     background-color: whitesmoke;
     display: flex;
