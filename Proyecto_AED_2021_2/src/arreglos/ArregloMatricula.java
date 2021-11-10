@@ -9,9 +9,9 @@ public class ArregloMatricula {
 	//  Atributos privados
 	private ArrayList <Matricula> matricula;
 	//  Constructor
-	public ArregloMatricula() {
+	public void ArregloMatriculas() {
 		matricula = new ArrayList <Matricula> ();
-		cargarMatricula();
+		cargarMatriculas();
 	}
 	//  Operaciones públicas básicas
 	public void adicionar(Matricula x) {
@@ -45,11 +45,11 @@ public class ArregloMatricula {
 			pw = new PrintWriter(new FileWriter("matriculas.txt"));
 			for (int i=0; i<tamaño(); i++) {
 				x = obtener(i);
-				linea =	x.getnumMatricula() + ";" +
-						x.getcodAlumno() + ";" +
-						x.getcodCurso() + ";" +
-						x.getfecha() + ";" +
-						x.gethora();
+				linea =	x.getNumMatricula() + ";" +
+						x.getCodAlumno() + ";" +
+						x.getCodAlumno() + ";" +
+						x.getFecha() + ";" +
+						x.getFecha();
 				pw.println(linea);
 			}
 			pw.close();
@@ -66,7 +66,7 @@ public class ArregloMatricula {
 			br = new BufferedReader(new FileReader("matriculas.txt"));
 			while ((linea=br.readLine()) != null) {
 				s = linea.split(";");
-				numMatricula = Integer.parseInt(s[0].trim());
+				numMatricula = Integer.parseInt(s[1].trim());
 				codAlumno = Integer.parseInt(s[1].trim());
 				codCurso = Integer.parseInt(s[5].trim());
 				fecha = s[3].trim();
@@ -83,11 +83,11 @@ public class ArregloMatricula {
 		if (tamaño() == 0)
 			return 100001;
 		else
-			return obtener(tamaño()-1).getnumMatricula() + 1;
+			return obtener(tamaño()-1).getNumMatricula() + 1;
 	}
 	public boolean procedecodAlumno(int codAlumno) {
 		for (int i=tamaño()-1; i>=0; i--)
-			if (obtener(i).getcodAlumno() == codAlumno;
+			if (obtener(i).getCodAlumno() == codAlumno &&  obtener(i).getCodAlumno() == 0)
 				return false;
 		return true;
 	}

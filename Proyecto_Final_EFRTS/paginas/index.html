@@ -10,28 +10,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div id="superior-header">
-            <div id="logo">
-                <img src="../img/Logo-sinfondo.png" alt="Imagen no encontrada">
-            </div>
+            <a href="" id="logo">
+                <img id="imagen" src="../img/Logo-sinfondo.png" alt="Imagen no encontrada">
+            </a>
+            
             <div id="buscador">
                 <label for=""></label>
                 <input type="text">
                 <button>Buscar</button>
             </div>
         </div>
-        <nav>
+        <a href="" id="minilogo">
+            <img id="miniimagen" src="../img/Logo pequeño.png" alt="">
+        </a>
+        <nav id="navbar">
+        
             <ol>
-                <ol>
-                    <a href="index.html" class="enlaces">Inicio</a>
-                    <a href="nosotros.html" class="enlaces">Nosotros</a>
-                    <a href="lugares.html" class="enlaces">Lugares</a>
-                    <a href="" class="enlaces">Paquetes</a>
-                    <a href="" class="enlaces">Blog</a>
-                    <a href="" class="enlaces">Contáctanos</a>
-                </ol>
+                <a href="index.html" class="enlaces">Inicio</a>
+                <a href="nosotros.html" class="enlaces">Nosotros</a>
+                <a href="lugares.html" class="enlaces">Lugares</a>
+                <a href="" class="enlaces">Paquetes</a>
+                <a href="" class="enlaces">Blog</a>
+                <a href="" class="enlaces">Contáctanos</a>
             </ol>
+            
         </nav>
     </header>
     <div>
@@ -143,5 +147,6 @@
 
     </div>
 </body>
-<script src="../script/js.js"></script>
+
+<script src="../script/lugares.js"></script>
 </html>

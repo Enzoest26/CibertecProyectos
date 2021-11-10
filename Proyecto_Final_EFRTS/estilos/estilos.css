@@ -2,39 +2,73 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
 }
-body{
+#header{
     
 }
 header{
-    
-    padding-bottom: 50px;
+    overflow: hidden;
+
     background-color: whitesmoke;
-    animation: EfectosX 0.75s;
+ /*   animation: EfectosX 0.75s;*/
+    z-index: 99;
+    width: 100%;
+    overflow: hidden;
+   
+    /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0; /* At the top */
+    z-index: 99;
+    background-color: whitesmoke;
+
 }
 #superior-header{
     display: flex;
     justify-content: space-between;
-    
+    transition: 2s;
 }
 #buscador{
     margin: 20px;
-    animation: EfectosY 5s;
+    transition: 2s;
 }
 #logo img{
     width: 100%;
-    
+    transition: 2s;
 }
 #logo{
     width: 12%;
     margin-left: 15px;
     margin-top: 10px;
-    animation: EfectosX 6s;
+    transition: 0.4s;
+}
+#minilogo{
+    width: 100px;
+    height: 80px;
+    top: 60px;
+    left: 50px;
+    right: 0px;
+    position: relative;
+}
+#miniimagen{
+    width: 100px;
+    height: 80px;
+    visibility: hidden;
+}
+.esconder{
+    transition: 2s;
+    visibility: hidden;
+    display: none;
+    
+}
+.ver{
+    transition: 0.4s;
+    visibility: visible;
 }
 nav{
     display: flex;
     justify-content: center;
-    margin: -50px 0;
-    
+    margin: 1px 0;
 }
 
 nav ol a{
@@ -49,7 +83,6 @@ nav ol a:hover{
     color: rebeccapurple;
     transition: 1s;
 }
-
 #carrusel{
     width: 100%;
     margin: 0 auto;
@@ -188,21 +221,6 @@ nav ol a:hover{
 
 
 
-.titulos{
-    text-align: center;
-    margin: 25px 0;
-}
-.lugares-section{
-    margin: 30px auto;
-    opacity: 1;
-    background-color: white;
-    width: 97%;
-    border-radius: 15%;
-}
-h4{
-    text-align: center;
-    margin: 20px 0;
-}
 
 
 
@@ -227,11 +245,35 @@ h4{
 .animacion-scroll{
     
 }
-/*          Pagina  Lugares  */
+/*      !    Pagina  Lugares  */
+
+.titulos{
+    text-align: center;
+    margin: 25px 0;
+    font-family: fantasy;
+    font-size:50px;
+    letter-spacing: 7px;
+}
+.lugares-section{
+    margin: 150px auto;
+    opacity: 1;
+    background-color: transparent;
+    width: 97%;
+    display:flex;
+}
+h4{
+    text-align: center;
+    margin: 20px 0;
+}
+
+#content_lugares{
+    display: flex;
+    flex-direction: column;
+}
 
 .img_div{
     margin: 150px 0px 0 200px;
-    width: 50%;
+    width: 40%;
     height: 400px;
     
 }
@@ -240,16 +282,36 @@ h4{
     width: 35%;
     font-size: 20px;
 }
-.img_div img{
-    width:60%;
+
+.texto_div > p{
+    font-family: "Latin Modern Roman";
+    font-style: italic;
+}
+
+.p_01,.p_02,.p_03,.p_04{
+    width: 70%;
+    padding: 5px;
+    line-height: 45px;
+    margin-top: 110px;
+}
+
+.img_01,.img_02,.img_03,.img_04{
+    width:70%;
     height: 60%;
+    transform: rotate(-5deg);
+    animation: 1s rotar ;
+}
+.img_02{
+    margin-top: 20px;
+    width: 70%;
+    height: 50%;
+}
+.img_03{
+    margin-top: 20px;
+    margin-left: 15px;
 }
 
 
-.section_lugares{
-    display:flex;
-    
-}
 .carta_fondo{
     position: relative;
     width: 0;
@@ -261,6 +323,7 @@ h4{
     width: 1000px;
     height: 500px;
 }
+
 .grado{
     z-index: 1;
     display: flex;
@@ -279,6 +342,7 @@ footer{
 
 
 /*Este transition es de a de vueltas de izquierda y derecha*/
+/*
 @keyframes EfectosY{
     from{
         opacity: 0;
@@ -302,4 +366,58 @@ footer{
         transform: rotateX(0);
         
     }
+}
+*/
+@keyframes rotar01 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(710deg);
+    }
+}
+@keyframes rotar02 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-710deg);
+    }
+}
+
+@keyframes rotarArriba{
+    from{
+        transform:translateY(220px);
+    }
+    to{
+        transform:translateY(0);
+        
+    }
+}
+
+
+/*      Javascript estilo*/
+body{
+    
+}
+
+#content_lugares{
+    background: linear-gradient(to bottom, #A8EDA1, #6CE6E6, #FFC300 , #29DA77 )
+}
+.hidden{
+    opacity: 0;
+}
+.visible{
+    transition: 1s;
+    opacity: 1;
+    animation: 0.3s rotarArriba linear;
+    
+}
+
+.lugares-section:nth-child(n){
+    transition: 1s;
+
+}
+.lugares-section:nth-child(2n+1){
+    transition: 1s;
 }

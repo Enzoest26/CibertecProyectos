@@ -236,6 +236,7 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 		habilitartxt(false);
 		btnAccion.setText("");
 		btnBuscar.setText("");
+		txtCodigo.setEditable(false);
 	}
 	protected void actionPerformedBtnConsultar(ActionEvent e) {
 		indexBoton = CONSULTAR;
@@ -277,7 +278,6 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 				adicionar();
 				break;
 			case MODIFICAR:
-				int i=0;
 				modificar();
 				break;
 			case CONSULTAR:
@@ -366,7 +366,7 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 				Alumno nuevo = new Alumno(codigo, nombre, apellido, dni, edad, celular, estado);
 				aa.adicionar(nuevo);
 				listar();
-				
+				limpieza();
 			}
 			else {
 				mensaje("Codigo ya exite");
@@ -457,3 +457,4 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 	}
 	
 }
+
