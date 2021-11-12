@@ -4,36 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lugares</title>
     <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="shortcut icon" href="../img/Logo_pequeño_sin fondo.png" >
     <!--El CDN de W3School-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div id="superior-header">
-            <div id="logo">
-                <img src="../img/Logo-sinfondo.png" alt="Imagen no encontrada">
-            </div>
+            <a href="" id="logo">
+                <img id="imagen" src="../img/Logo-sinfondo.png" alt="Imagen no encontrada">
+            </a>
+            
             <div id="buscador">
                 <label for=""></label>
                 <input type="text">
                 <button>Buscar</button>
             </div>
         </div>
-        <nav>
+        <a href="" id="minilogo">
+            <img id="miniimagen" src="../img/Logo pequeño.png" alt="">
+        </a>
+        <nav id="navbar">
+        
             <ol>
-                <a href="" class="enlaces">Inicio</a>
-                <a href="" class="enlaces">Nosotros</a>
-                <a href="" class="enlaces">Lugares</a>
-                <a href="" class="enlaces">Paquetes</a>
+                <a href="index.html" class="enlaces">Inicio</a>
+                <a href="nosotros.html" class="enlaces">Nosotros</a>
+                <a href="lugares.html" class="enlaces">Lugares</a>
+                <a href="paquetes.html" class="enlaces">Paquetes</a>
                 <a href="" class="enlaces">Blog</a>
                 <a href="" class="enlaces">Contáctanos</a>
             </ol>
+            
         </nav>
     </header>
 
-
+    <div id="content_paquetes">
+        <h1>PAQUETES</h1>
+        <section class="div_avion">
+            <img src="../img/Paquetes/Avion.jpg" alt="">
+            <h2>AVIÓN</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cum laborum, eligendi totam deserunt necessitatibus suscipit 
+                voluptatum dignissimos corrupti veniam nam enim. 
+                Expedita facilis corporis consequuntur doloribus beatae nisi 
+                totam sunt.</p>
+        </section>
+        <section class="div_hotel">
+            <img src="../img/Paquetes/Hotel.jpg" alt="">
+            <h2>HOTELES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cum laborum, eligendi totam deserunt necessitatibus suscipit 
+                voluptatum dignissimos corrupti veniam nam enim. 
+                Expedita facilis corporis consequuntur doloribus beatae nisi 
+                totam sunt.</p>
+        </section>
+    </div>
     <footer>
         <div id="logo">
             <img src="../img/Logo-sinfondo.png" alt="Imagen no encontrada">
@@ -57,7 +84,11 @@
             </div>
 
         </div>
+        <noscript>Sin script, la pagina se vera deforme</noscript>
     </footer>
 
 </body>
+<script src="../script/js.js"></script>
+<script src="../script/lugares.js"></script>
+
 </html>

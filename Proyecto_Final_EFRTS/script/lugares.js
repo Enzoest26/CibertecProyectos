@@ -20,9 +20,9 @@ function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         logo.classList.add("esconder");
         enlace.classList.add("esconder");
-        header.style.marginTop = "-55px"
+        header.style.marginTop = "-65px"
         navbar.style.padding = "10px 0px";
-        navbar.style.margin = "-20px auto 0 auto";
+        navbar.style.margin = "70px auto -10px auto";
         superior_header.classList.add("esconder");
         buscador.classList.add("esconder");
         minilogo.classList.remove("esconder");
@@ -31,6 +31,7 @@ function scrollFunction() {
 
     else {
         header.style.marginTop = "0px"
+        
         minilogo.classList.add("esconder");
         minilogo.classList.remove("ver");
         logo.classList.remove("esconder");

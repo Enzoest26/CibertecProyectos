@@ -6,111 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lugares</title>
     <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="shortcut icon" href="../img/Logo_pequeño_sin fondo.png" >
     <!--El CDN de W3School-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div id="superior-header">
-            <div id="logo">
-                <img src="../img/Logo-sinfondo.png" alt="Imagen no encontrada">
-            </div>
+            <a href="" id="logo">
+                <img id="imagen" src="../img/Logo-sinfondo.png" alt="Imagen no encontrada">
+            </a>
+            
             <div id="buscador">
                 <label for=""></label>
                 <input type="text">
                 <button>Buscar</button>
             </div>
         </div>
-        <nav id="nav">
+        <a href="" id="minilogo">
+            <img id="miniimagen" src="../img/Logo pequeño.png" alt="">
+        </a>
+        <nav id="navbar">
+        
             <ol>
                 <a href="index.html" class="enlaces">Inicio</a>
                 <a href="nosotros.html" class="enlaces">Nosotros</a>
                 <a href="lugares.html" class="enlaces">Lugares</a>
-                <a href="" class="enlaces">Paquetes</a>
+                <a href="paquetes.html" class="enlaces">Paquetes</a>
                 <a href="" class="enlaces">Blog</a>
                 <a href="" class="enlaces">Contáctanos</a>
             </ol>
+            
         </nav>
     </header>
 
     <div id="content_lugares" >
-        <h2 class="titulos">Lugares</h2>
-
-        <!--    ?        Arequipa            -->
-        <section class="lugares-section hidden">
-            <div class="carta_fondo">
-                <img class="sombreado" src="../img/Lugares img/Carta-postal-01.jpg" alt="">
-            </div>
-            <div class="grado">
-                <div class="img_div">
-                    <img class="img_01 sombreado" src="../img/Lugares img/Chocolaqa-Arequipa.jpg" alt="">
-                </div>
-                <div class="texto_div">
-                    <p class="p_01">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Aliquam, ratione fuga dolorem suscipit obcaecati atque! 
-                    </p>
-                </div>
-            </div>
-            
-        </section>
-
-        <!--   ?         Puno            -->
-        <section class="flex-horinzotal lugares-section hidden">
-            
-            <div class="carta_fondo">
-                <img class="sombreado" src="../img/Lugares img/Carta-postal-02.jpg" alt="">
-            </div>
-            <div class="grado">
-                <div class="img_div animacion-scroll">
-                    <img class="img_02 sombreado" src="../img/Lugares img/Catedral-lima.jpg" alt="">
-                    
-                </div>
-                <div class="texto_div">
-                    <p class="p_02">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Aliquam, ratione fuga dolorem suscipit obcaecati atque! 
-                    </p>
-                </div>
-            </div>
-        </section>
-
-
-         <!--     ?      Tacna           -->
-         <section class="flex-horinzotal lugares-section hidden">
-            <div class="carta_fondo">
-                <img class="sombreado" src="../img/Lugares img/Carta-postal-04.jpg" alt="">
-            </div>
-            <div class="grado">
-                <div class="img_div animacion-scroll">
-                    <img class="img_03 sombreado" src="../img/Lugares img/Conchachiri-Tacna.jpg" alt="">
-                    
-                </div>
-                <div class="texto_div">
-                    <p class="p_03">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Aliquam, ratione fuga dolorem suscipit obcaecati atque! 
-                    </p>
-                </div>
-            </div>
-        </section>
-
-
-        <!--        ?   Lima-->
-        <section class="flex-horinzotal lugares-section hidden">
-            <div class="carta_fondo">
-                <img class="sombreado" src="../img/Lugares img/Carta-postal-01.jpg" alt="">
-            </div>
-            <div class="grado">
-                <div class="img_div animacion-scroll">
-                    <img class="img_04 sombreado" src="../img/Lugares img/Lago titicaca-Puno.jpg" alt="">
-                </div>
-                <div class="texto_div">
-                    <p class="p_04">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Aliquam, ratione fuga dolorem suscipit obcaecati atque! 
-                    </p>
-                </div>
-            </div>
-        </section>
-
         
+        <section class="parte_derecho">
+            <div class="img_derecha">
+                <img src="../img/Lugares img/Puente-Arequipa.jpg" alt="">
+                <p>Puente</p>
+            </div>
+            <div class="descri_derecho">
+                <h2>AREQUIPA</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur 
+                    adipisicing elit. Possimus debitis quia modi aliquam 
+                    iusto deserunt, cupiditate facilis tenetur. 
+                    Enim placeat dolor dignissimos fugiat eius qui 
+                    incidunt nostrum quasi consequuntur repudiandae.</p>
+            </div>
+        </section>
+
+
+        <section class="parte_izqui">
+            <div class="descri_izqui">
+                <h2>PUNO</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur 
+                    adipisicing elit. Possimus debitis quia modi aliquam 
+                    iusto deserunt, cupiditate facilis tenetur. 
+                    Enim placeat dolor dignissimos fugiat eius qui 
+                    incidunt nostrum quasi consequuntur repudiandae.</p>
+            </div>
+            <div class="img_izqui">
+                <img src="../img/Lugares img/Lago titicaca-Puno.jpg" alt="">
+                <p>Lago titicaca</p>
+            </div>
+        </section>
+
+
+        <section class="parte_derecho">
+            <div class="img_derecha">
+                <img src="../img/Lugares img/Conchachiri-Tacna.jpg" alt="">
+                <p>Conchachiri</p>
+            </div>
+            <div class="descri_derecho">
+                <h2>TACNA</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur 
+                    adipisicing elit. Possimus debitis quia modi aliquam 
+                    iusto deserunt, cupiditate facilis tenetur. 
+                    Enim placeat dolor dignissimos fugiat eius qui 
+                    incidunt nostrum quasi consequuntur repudiandae.</p>
+            </div>
+        </section>
+
+
+        <section class="parte_izqui">
+            <div class="descri_izqui">
+                <h2>LIMA</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur 
+                    adipisicing elit. Possimus debitis quia modi aliquam 
+                    iusto deserunt, cupiditate facilis tenetur. 
+                    Enim placeat dolor dignissimos fugiat eius qui 
+                    incidunt nostrum quasi consequuntur repudiandae.</p>
+            </div>
+            <div class="img_izqui">
+                <img src="../img/Lugares img/Parque de las aguas-Lima.jpg" alt="">
+                <p>Circuito Mágico del agua</p>
+            </div>
+        </section>
+
+        <section class="parte_derecho">
+            <div class="img_derecha">
+                <img src="../img/Lugares img/Cumbemayo-Cajamarca.jpg" alt="">
+                <p>Cumbemayo</p>
+            </div>
+            <div class="descri_derecho">
+                <h2>CAJAMARCA</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur 
+                    adipisicing elit. Possimus debitis quia modi aliquam 
+                    iusto deserunt, cupiditate facilis tenetur. 
+                    Enim placeat dolor dignissimos fugiat eius qui 
+                    incidunt nostrum quasi consequuntur repudiandae.</p>
+            </div>
+        </section>
     </div>
 
 
@@ -119,13 +127,13 @@
             <img src="../img/Logo-sinfondo.png" alt="Imagen no encontrada">
         </div>
         <div class="flex-vertical" style="margin: -20px;">
-            <a class="enlaces" href="#">Inicio</a>
-            <a class="enlaces" href="#">Nosotros</a>
-            <a class="enlaces" href="#">Paquetes</a>
+            <a class="enlaces nav_footer" href="#">Inicio</a>
+            <a class="enlaces nav_footer" href="#">Nosotros</a>
+            <a class="enlaces nav_footer" href="#">Paquetes</a>
         </div>
         <div class="flex-vertical">
-            <a class="enlaces" href="#">Blog</a>
-            <a class="enlaces" href="#">Contáctanos</a>
+            <a class="enlaces nav_footer" href="#">Blog</a>
+            <a class="enlaces nav_footer" href="#">Contáctanos</a>
         </div>
         <div class="flex-vertical">
             <h2>Redes Sociales</h2>
@@ -139,6 +147,8 @@
         </div>
     </footer>
 
+
 </body>
+<script src="../script/js.js"></script>
 <script src="../script/lugares.js"></script>
 </html>

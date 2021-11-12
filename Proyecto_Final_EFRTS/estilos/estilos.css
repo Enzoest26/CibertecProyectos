@@ -1,5 +1,5 @@
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
 }
 #header{
@@ -11,14 +11,12 @@ header{
     background-color: whitesmoke;
  /*   animation: EfectosX 0.75s;*/
     z-index: 99;
-    width: 100%;
+    height: auto;
     overflow: hidden;
-   
-    /* Large padding which will shrink on scroll (using JS) */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     position: fixed; /* Sticky/fixed navbar */
     width: 100%;
-    top: 0; /* At the top */
+    top: 0; 
     z-index: 99;
     background-color: whitesmoke;
 
@@ -27,6 +25,7 @@ header{
     display: flex;
     justify-content: space-between;
     transition: 2s;
+    margin-bottom: -100px;
 }
 #buscador{
     margin: 20px;
@@ -75,13 +74,14 @@ nav ol a{
     display: inline-block;
     padding: 20px 40px;
     text-decoration: none;
-    
+    font-size: 20px;
     margin: 0px -3px;
     
 }
 nav ol a:hover{
     color: rebeccapurple;
     transition: 1s;
+    background-color: #cecdcd;
 }
 #carrusel{
     width: 100%;
@@ -118,10 +118,13 @@ nav ol a:hover{
     margin: -25px 0;
 }
 .index-img{
-    width: 100%;
-    height: 200px;
+
+    margin: 0 0 0 30px;
+    width: 95%;
+    height: 300px;
     transition:all 0.4s ease-out;
     z-index: 1;
+    border-radius: 3px;
     
 }
 /*
@@ -137,7 +140,7 @@ nav ol a:hover{
     bottom: 50px;
     right: 50%;
     left: 50%;
-    color: blueviolet;
+    
 }
 
 #blog-index{
@@ -217,7 +220,9 @@ nav ol a:hover{
 .redes{
     font-size: 40px;
 }
-
+.nav_footer{
+    font-size: 20px;
+}
 
 
 
@@ -226,9 +231,12 @@ nav ol a:hover{
 
 
 /*         ! Paginas Nosotros         */
+#content_nosotros{
+    margin-top: 250px;
+}
 .flex-horinzotal > img{
-    width: 50%;
-    margin: 20px auto;
+    width: 48%;
+    margin: 20px 25px;
 }
 
 .tamaño-nosotros > img{
@@ -242,8 +250,16 @@ nav ol a:hover{
     width: 20%;
 }
 
-.animacion-scroll{
-    
+.izqui-div p{
+    text-align: center;
+    margin: 0 80px;
+}
+.img_nosotros{
+    border-radius: 10px;
+
+}
+.mision_vision{
+    margin-bottom: 80px;
 }
 /*      !    Pagina  Lugares  */
 
@@ -254,84 +270,76 @@ nav ol a:hover{
     font-size:50px;
     letter-spacing: 7px;
 }
-.lugares-section{
-    margin: 150px auto;
-    opacity: 1;
-    background-color: transparent;
-    width: 97%;
-    display:flex;
-}
-h4{
-    text-align: center;
-    margin: 20px 0;
-}
-
 #content_lugares{
-    display: flex;
-    flex-direction: column;
+    margin-top: 200px;
 }
-
-.img_div{
-    margin: 150px 0px 0 200px;
-    width: 40%;
-    height: 400px;
+.img_derecha > img,.img_izqui > img{
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px black;
     
 }
-.texto_div{
-    margin: -80px 0px;
-    width: 35%;
-    font-size: 20px;
-}
-
-.texto_div > p{
-    font-family: "Latin Modern Roman";
-    font-style: italic;
-}
-
-.p_01,.p_02,.p_03,.p_04{
-    width: 70%;
-    padding: 5px;
-    line-height: 45px;
-    margin-top: 110px;
-}
-
-.img_01,.img_02,.img_03,.img_04{
-    width:70%;
-    height: 60%;
-    transform: rotate(-5deg);
-    animation: 1s rotar ;
-}
-.img_02{
-    margin-top: 20px;
-    width: 70%;
-    height: 50%;
-}
-.img_03{
-    margin-top: 20px;
-    margin-left: 15px;
-}
-
-
-.carta_fondo{
-    position: relative;
-    width: 0;
-    z-index: 0;
-    margin: 0 auto;
-    left: 120px;
-}
-.carta_fondo > img{
-    width: 1000px;
-    height: 500px;
-}
-
-.grado{
-    z-index: 1;
+.img_derecha,.img_izqui{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-bottom: 100px;
 }
-.grado > img{
-    margin-left: 100px;
+.img_izqui{
+    margin-right: 30px;
 }
+.img_derecha > p,.img_izqui > p{
+    text-align: center;
+    
+}
+.descri_derecho,.descri_izqui{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 80px;
+}
+.descri_derecho > h2, .descri_izqui > h2{
+    margin: -100px 0 50px 0;
+}   
+.img_izqui > p, .img_derecha > p{
+    font-size: 25px;
+}
+.parte_izqui,.parte_derecho{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*? PAGINA PAQUETES*/
+#content_paquetes{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+#content_paquetes > h1{
+    grid-column: 1/3;
+    text-align: center;
+    margin: 15px auto;
+    margin-bottom: 60px;
+}
+.div_avion,.div_hotel{
+    display: flex;
+    flex-direction: column;
+    
+}
+.div_avion{
+    margin-left: 28px;
+}
+.div_avion img,.div_hotel img{
+    width: 95%;
+    border-radius: 5px;
+}
+
+
 
 footer{
     background-color: whitesmoke;
@@ -397,13 +405,8 @@ footer{
 
 
 /*      Javascript estilo*/
-body{
-    
-}
 
-#content_lugares{
-    background: linear-gradient(to bottom, #A8EDA1, #6CE6E6, #FFC300 , #29DA77 )
-}
+
 .hidden{
     opacity: 0;
 }
@@ -420,4 +423,20 @@ body{
 }
 .lugares-section:nth-child(2n+1){
     transition: 1s;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    background-color: #555555;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+}
+button:hover{
+    transition: 0.4s;
+    box-shadow: 0 0 2px 3px;
+    
 }

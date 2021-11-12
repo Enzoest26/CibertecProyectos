@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Perú Camping</title>
+    <link rel="shortcut icon" href="../img/Logo_pequeño_sin fondo.png" >
     <link rel="stylesheet" href="../estilos/estilos.css">
     <!--El CDN de W3School-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div id="superior-header">
-            <div id="logo">
-                <img src="../img/Logo-sinfondo.png" alt="Imagen no encontrada">
-            </div>
+            <a href="" id="logo">
+                <img id="imagen" src="../img/Logo-sinfondo.png" alt="Imagen no encontrada">
+            </a>
+            
             <div id="buscador">
                 <label for=""></label>
                 <input type="text">
                 <button>Buscar</button>
             </div>
         </div>
-        <nav>
+        <a href="" id="minilogo">
+            <img id="miniimagen" src="../img/Logo pequeño.png" alt="">
+        </a>
+        <nav id="navbar">
+        
             <ol>
                 <a href="index.html" class="enlaces">Inicio</a>
                 <a href="nosotros.html" class="enlaces">Nosotros</a>
@@ -30,13 +36,14 @@
                 <a href="" class="enlaces">Blog</a>
                 <a href="" class="enlaces">Contáctanos</a>
             </ol>
+            
         </nav>
     </header>
     <!-- ! El contenedor general-->
-    <div id ="content">
-        <h1 class="titulos">Acerca de la pagina</h1>
-        <section class="flex-horinzotal">
-            <img class="sombreado" src="../img/Nosotros/Vision.jpg" alt="">
+    <div id ="content_nosotros">
+        <h1 class="titulos" style="text-align: center;">Acerca de la pagina</h1>
+        <section class="flex-horinzotal mision_vision">
+            <img class="sombreado img_nosotros" src="../img/Nosotros/Vision.jpg" alt="">
             <div class="izqui-div">
                 <h3 class="titulos">Vision</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -45,15 +52,15 @@
             </div>
         </section>
         
-        <section class="flex-horinzotal">
+        <section class="flex-horinzotal mision_vision">
             
-            <div class="izqui-div">
+            <div class="izqui-div" style="margin-top: -50px;">
                 <h3 class="titulos">Vision</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     Explicabo esse inventore sed. Iusto earum molestiae similique in numquam, perferendis officia accusantium nobis, 
                     sunt facere odit? Non at veniam quod excepturi?</p>
             </div>
-            <img class="sombreado" src="../img/Nosotros/Mision.jpg" alt="">
+            <img class="sombreado img_nosotros" src="../img/Nosotros/Mision.jpg" alt="">
         </section>
 
         <section>
@@ -114,30 +121,33 @@
         
 
     </div>
-    <footer>
-        <div id="logo">
-            <img src="../img/Logo-sinfondo.png" alt="Imagen no encontrada">
-        </div>
-        <div class="flex-vertical" style="margin: -20px;">
-            <a class="enlaces" href="#">Inicio</a>
-            <a class="enlaces" href="#">Nosotros</a>
-            <a class="enlaces" href="#">Paquetes</a>
-        </div>
-        <div class="flex-vertical">
-            <a class="enlaces" href="#">Blog</a>
-            <a class="enlaces" href="#">Contáctanos</a>
-        </div>
-        <div class="flex-vertical">
-            <h2>Redes Sociales</h2>
-            <div class="flex-horinzotal redes">
-                <a href="" class="enlaces"><i class="fa fa-twitter-square"></i></a>
-                <a href="" class="enlaces"><i class="fa fa-facebook-official"></i></a>
-                <a href="" class="enlaces"><i class="fa fa-snapchat-square"></i></a>
-                <a href="" class="enlaces"><i class="fa fa-share-alt-square"></i></a>
+        <footer>
+            <div id="logo">
+                <img src="../img/Logo-sinfondo.png" alt="Imagen no encontrada">
             </div>
+            <div class="flex-vertical" style="margin: -20px;">
+                <a class="enlaces nav_footer" href="#">Inicio</a>
+                <a class="enlaces nav_footer" href="#">Nosotros</a>
+                <a class="enlaces nav_footer" href="#">Paquetes</a>
+            </div>
+            <div class="flex-vertical">
+                <a class="enlaces nav_footer" href="#">Blog</a>
+                <a class="enlaces nav_footer" href="#">Contáctanos</a>
+            </div>
+            <div class="flex-vertical">
+                <h2>Redes Sociales</h2>
+                <div class="flex-horinzotal redes">
+                    <a href="" class="enlaces"><i class="fa fa-twitter-square"></i></a>
+                    <a href="" class="enlaces"><i class="fa fa-facebook-official"></i></a>
+                    <a href="" class="enlaces"><i class="fa fa-snapchat-square"></i></a>
+                    <a href="" class="enlaces"><i class="fa fa-share-alt-square"></i></a>
+                </div>
 
-        </div>
-    </footer>
+            </div>
+        </footer>
 
+    
 </body>
+<script src="../script/js.js"></script>
+<script src="../script/lugares.js"></script>
 </html>
