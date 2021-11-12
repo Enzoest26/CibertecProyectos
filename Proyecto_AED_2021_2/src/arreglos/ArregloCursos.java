@@ -8,11 +8,11 @@ public class ArregloCursos {
 	//Constructor
 	public ArregloCursos() {
 		curso = new ArrayList <Curso> ();
-		adicionar(new Curso(153648, 2, 5,45,"Matematica"));
-		adicionar(new Curso(489489, 1, 8,30,"Lenguaje"));
-		adicionar(new Curso(149846, 2, 5,45,"Ciencias y Tecnología"));
-		adicionar(new Curso(999000, 7, 10,60,"Historia"));
-		adicionar(new Curso(482486, 3, 3,20,"Comunicación"));
+		adicionar(new Curso(153648,"Matematica", 2, 5,45));
+		adicionar(new Curso(489489,"Lenguaje", 1, 8,30));
+		adicionar(new Curso(149846,"Ciencias y Tecnología", 2, 5,45));
+		adicionar(new Curso(999000, "Historia",7, 10,60));
+		adicionar(new Curso(482486, "Comunicación",3, 3,20));
 	}
 	//Operaciones publicas basicas
 	public void adicionar(Curso x) {

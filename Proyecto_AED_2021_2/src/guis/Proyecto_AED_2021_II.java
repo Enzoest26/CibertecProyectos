@@ -11,6 +11,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+import java.awt.Toolkit;
+import javax.swing.ImageIcon;
 
 public class Proyecto_AED_2021_II extends JFrame implements ActionListener{
 
@@ -52,6 +54,8 @@ public class Proyecto_AED_2021_II extends JFrame implements ActionListener{
 	 * Create the frame.
 	 */
 	public Proyecto_AED_2021_II() {
+		setTitle("Jupiter School");
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Proyecto_AED_2021_II.class.getResource("/img/JUPITER_SCHOOL_MINI_sin fondo.png")));
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 800, 600);
@@ -63,6 +67,7 @@ public class Proyecto_AED_2021_II extends JFrame implements ActionListener{
 		menuBar.add(mnArchivo);
 		
 		mntmSalir = new JMenuItem("Salir");
+		mntmSalir.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/iconos/salida.png")));
 		mntmSalir.addActionListener(this);
 		mnArchivo.add(mntmSalir);
 		
@@ -70,10 +75,12 @@ public class Proyecto_AED_2021_II extends JFrame implements ActionListener{
 		menuBar.add(mnMantenimiento);
 		
 		mntmAlumno = new JMenuItem("Alumno");
+		mntmAlumno.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/iconos/escolar.png")));
 		mntmAlumno.addActionListener(this);
 		mnMantenimiento.add(mntmAlumno);
 		
 		mntmCurso = new JMenuItem("Curso");
+		mntmCurso.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/iconos/cursos.png")));
 		mntmCurso.addActionListener(this);
 		mnMantenimiento.add(mntmCurso);
 		
@@ -81,10 +88,12 @@ public class Proyecto_AED_2021_II extends JFrame implements ActionListener{
 		menuBar.add(mnRegistro);
 		
 		mntmMatricula = new JMenuItem("Matricula");
+		mntmMatricula.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/iconos/nuevo estudiante.png")));
 		mntmMatricula.addActionListener(this);
 		mnRegistro.add(mntmMatricula);
 		
 		mntmRetiro = new JMenuItem("Retiro");
+		mntmRetiro.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/iconos/eliminar.png")));
 		mntmRetiro.addActionListener(this);
 		mnRegistro.add(mntmRetiro);
 		
@@ -92,10 +101,12 @@ public class Proyecto_AED_2021_II extends JFrame implements ActionListener{
 		menuBar.add(mnConsulta);
 		
 		mntmAlumnosCursos = new JMenuItem("Alumno y Cursos");
+		mntmAlumnosCursos.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/iconos/buscar.png")));
 		mntmAlumnosCursos.addActionListener(this);
 		mnConsulta.add(mntmAlumnosCursos);
 		
 		mntmMatriculaRetiro = new JMenuItem("Matricula y Retiros");
+		mntmMatriculaRetiro.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/iconos/buscar.png")));
 		mntmMatriculaRetiro.addActionListener(this);
 		mnConsulta.add(mntmMatriculaRetiro);
 		
@@ -103,14 +114,17 @@ public class Proyecto_AED_2021_II extends JFrame implements ActionListener{
 		menuBar.add(mnReporte);
 		
 		mntmAlumnosMatriculaPendiente = new JMenuItem("Alumnos con matr\u00EDcula pendiente");
+		mntmAlumnosMatriculaPendiente.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/iconos/reporte.png")));
 		mntmAlumnosMatriculaPendiente.addActionListener(this);
 		mnReporte.add(mntmAlumnosMatriculaPendiente);
 		
 		mntmAlumnosMatriculaVigente = new JMenuItem("Alumnos con matr\u00EDcula vigente");
+		mntmAlumnosMatriculaVigente.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/iconos/reporte.png")));
 		mntmAlumnosMatriculaVigente.addActionListener(this);
 		mnReporte.add(mntmAlumnosMatriculaVigente);
 		
 		mntmAlumnosMatriculaCurso = new JMenuItem("Alumnos matriculados por curso");
+		mntmAlumnosMatriculaCurso.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/iconos/reporte.png")));
 		mntmAlumnosMatriculaCurso.addActionListener(this);
 		mnReporte.add(mntmAlumnosMatriculaCurso);
 		contentPane = new JPanel();

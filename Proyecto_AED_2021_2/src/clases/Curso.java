@@ -3,10 +3,10 @@ package clases;
 public class Curso {
 	private int codCurso, ciclo,creditos,horas;
 	private String asignatura;
-	private double totalPagar;
+	
 
 
-	public Curso(int codCurso, int ciclo, int creditos ,int horas,String asignatura) {
+	public Curso(int codCurso,String asignatura, int ciclo, int creditos ,int horas) {
 		this.codCurso = codCurso;
 		this.ciclo = ciclo;
 		this.creditos = creditos;
@@ -44,4 +44,6 @@ public class Curso {
 	public String getAsignatura() {
 		return asignatura;
 	}
+	//Operaciones complementarias
+	
 }

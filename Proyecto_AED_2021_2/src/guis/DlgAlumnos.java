@@ -14,6 +14,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JTable;
+import javax.swing.ImageIcon;
+import java.awt.Toolkit;
 
 public class DlgAlumnos extends JDialog implements ActionListener {
 	private JLabel lblCodigo;
@@ -69,8 +71,9 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 	 * Create the dialog.
 	 */
 	public DlgAlumnos() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(DlgAlumnos.class.getResource("/img/JUPITER_SCHOOL_MINI_sin fondo.png")));
 		setTitle("Alumnos");
-		setBounds(100, 100, 590, 473);
+		setBounds(100, 100, 739, 473);
 		getContentPane().setLayout(null);
 		
 		lblCodigo = new JLabel("C\u00F3digo:");
@@ -78,18 +81,18 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 		getContentPane().add(lblCodigo);
 		
 		txtCodigo = new JTextField();
-		txtCodigo.setBounds(76, 18, 95, 20);
+		txtCodigo.setBounds(92, 18, 95, 20);
 		getContentPane().add(txtCodigo);
 		txtCodigo.setColumns(10);
 		txtCodigo.setEditable(false);
 		
 		lblNombre = new JLabel("Nombre:");
-		lblNombre.setBounds(10, 46, 46, 14);
+		lblNombre.setBounds(10, 46, 62, 14);
 		getContentPane().add(lblNombre);
 		
 		
 		txtNombre = new JTextField();
-		txtNombre.setBounds(76, 43, 122, 20);
+		txtNombre.setBounds(92, 43, 122, 20);
 		getContentPane().add(txtNombre);
 		txtNombre.setColumns(10);
 		
@@ -99,7 +102,7 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 		getContentPane().add(lblDni);
 		
 		txtDNI = new JTextField();
-		txtDNI.setBounds(76, 93, 95, 20);
+		txtDNI.setBounds(92, 93, 95, 20);
 		getContentPane().add(txtDNI);
 		txtDNI.setColumns(10);
 		
@@ -108,7 +111,7 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 		getContentPane().add(lblEdad);
 		
 		txtEdad = new JTextField();
-		txtEdad.setBounds(76, 119, 46, 20);
+		txtEdad.setBounds(92, 119, 46, 20);
 		getContentPane().add(txtEdad);
 		txtEdad.setColumns(10);
 		
@@ -117,30 +120,30 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 		getContentPane().add(lblApellidos);
 		
 		txtApellidos = new JTextField();
-		txtApellidos.setBounds(76, 68, 122, 20);
+		txtApellidos.setBounds(92, 68, 122, 20);
 		getContentPane().add(txtApellidos);
 		txtApellidos.setColumns(10);
 		
 		lblCelular = new JLabel("Celular:");
-		lblCelular.setBounds(10, 147, 46, 14);
+		lblCelular.setBounds(10, 147, 62, 14);
 		getContentPane().add(lblCelular);
 		
 		txtCelular = new JTextField();
-		txtCelular.setBounds(76, 144, 95, 20);
+		txtCelular.setBounds(92, 144, 95, 20);
 		getContentPane().add(txtCelular);
 		txtCelular.setColumns(10);
 		
 		lblEstado = new JLabel("Estado:");
-		lblEstado.setBounds(10, 172, 46, 14);
+		lblEstado.setBounds(10, 172, 62, 14);
 		getContentPane().add(lblEstado);
 		
 		txtEstado = new JTextField();
-		txtEstado.setBounds(76, 169, 46, 20);
+		txtEstado.setBounds(92, 169, 46, 20);
 		getContentPane().add(txtEstado);
 		txtEstado.setColumns(10);
 		
 		scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 205, 554, 218);
+		scrollPane.setBounds(10, 205, 703, 218);
 		getContentPane().add(scrollPane);
 		
 		tblTable = new JTable();
@@ -148,22 +151,22 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 		
 		btnAdicionar = new JButton("Adicionar");
 		btnAdicionar.addActionListener(this);
-		btnAdicionar.setBounds(461, 17, 89, 31);
+		btnAdicionar.setBounds(624, 13, 89, 31);
 		getContentPane().add(btnAdicionar);
 		
 		btnConsultar = new JButton("Consultar");
 		btnConsultar.addActionListener(this);
-		btnConsultar.setBounds(461, 67, 89, 31);
+		btnConsultar.setBounds(624, 63, 89, 31);
 		getContentPane().add(btnConsultar);
 		
 		btnEliminar = new JButton("Eliminar");
 		btnEliminar.addActionListener(this);
-		btnEliminar.setBounds(461, 164, 89, 31);
+		btnEliminar.setBounds(624, 164, 89, 31);
 		getContentPane().add(btnEliminar);
 		
 		btnModificar = new JButton("Modificar");
 		btnModificar.addActionListener(this);
-		btnModificar.setBounds(461, 114, 89, 31);
+		btnModificar.setBounds(624, 114, 89, 31);
 		getContentPane().add(btnModificar);
 		
 		tabla = new DefaultTableModel();
@@ -178,7 +181,7 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 		
 		btnOpciones = new JButton("Opciones");
 		btnOpciones.addActionListener(this);
-		btnOpciones.setBounds(346, 39, 89, 128);
+		btnOpciones.setBounds(465, 43, 89, 128);
 		getContentPane().add(btnOpciones);
 		
 		listar();
@@ -188,21 +191,27 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 		
 		btnAccion = new JButton("");
 		btnAccion.addActionListener(this);
-		btnAccion.setBounds(225, 166, 89, 23);
+		btnAccion.setBounds(293, 164, 89, 23);
 		getContentPane().add(btnAccion);
 		btnAccion.setEnabled(false);
 		
 		btnBuscar = new JButton("Buscar");
 		btnBuscar.addActionListener(this);
-		btnBuscar.setBounds(225, 17, 89, 23);
+		btnBuscar.setBounds(293, 17, 89, 23);
 		getContentPane().add(btnBuscar);
 		btnBuscar.setEnabled(false);
+		
+		lblLogo = new JLabel("");
+		lblLogo.setIcon(new ImageIcon(DlgAlumnos.class.getResource("/img/JUPITER_SCHOOL_sin_fondo_chico.png")));
+		lblLogo.setBounds(293, 46, 100, 100);
+		getContentPane().add(lblLogo);
 	}
 	
 	ArregloAlumnos aa = new ArregloAlumnos();
 	private JButton btnOpciones;
 	private JButton btnAccion;
 	private JButton btnBuscar;
+	private JLabel lblLogo;
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnBuscar) {
 			actionPerformedBtnBuscar(e);
@@ -237,6 +246,7 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 		btnAccion.setText("");
 		btnBuscar.setText("");
 		txtCodigo.setEditable(false);
+		btnBuscar.setEnabled(false);
 	}
 	protected void actionPerformedBtnConsultar(ActionEvent e) {
 		indexBoton = CONSULTAR;
@@ -270,7 +280,12 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 		txtCodigo.setEditable(true);
 	}
 	protected void actionPerformedBtnEliminar(ActionEvent e) {
-		btnOpciones.setText("Adicionar");
+		indexBoton = ELIMINAR;
+		btnAccion.setText("Eliminar");
+		txtCodigo.setEditable(true);
+		btnAccion.setEnabled(true);
+		habilitarbtn(false);
+		
 	}
 	protected void actionPerformedBtnAccion(ActionEvent e) {
 		switch(indexBoton) {
@@ -282,6 +297,9 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 				break;
 			case CONSULTAR:
 				consultar();
+				break;
+			case ELIMINAR:
+				eliminar();
 				break;
 		}
 		
@@ -350,6 +368,12 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 	
 	void mensaje(String mensaje) {
 		JOptionPane.showMessageDialog(this, mensaje);
+	}
+	int mensajeConfirmacion(String mensaje) {
+		return JOptionPane.showConfirmDialog(this, mensaje);
+	}
+	void mensajeError(String mensaje) {
+		JOptionPane.showMessageDialog(this,mensaje,"Error",JOptionPane.ERROR_MESSAGE);
 	}
 	void adicionar() {
 		try {
@@ -431,6 +455,27 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 			mensaje("Datos incorrectos");
 		}
 	}
+	
+	void eliminar() {
+		try {
+			int codigo = leerCodigo();
+			Alumno x = aa.buscar(codigo);
+			if(x != null) {
+				int decision = mensajeConfirmacion("¿Esta seguro de eliminar el registro?" );
+				if(decision == 0) {
+					aa.eliminar(x);
+					listar();
+					btnAccion.setEnabled(true);
+				}
+			}
+			else {
+				mensajeError("No se encontro código");
+			}
+		}
+		catch(Exception e) {
+			
+		}
+	}
 	//Habilitar caja de texto
 	void habilitartxt(boolean condicional) {
 		
@@ -455,6 +500,5 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 	public boolean validarNumeros(String datos) {
 		return datos.matches("[a-zA-Z]");
 	}
-	
 }
 
