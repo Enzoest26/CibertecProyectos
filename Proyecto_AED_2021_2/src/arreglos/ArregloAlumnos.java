@@ -37,4 +37,10 @@ public class ArregloAlumnos {
 	public void eliminar(Alumno x) {
 		alu.remove(x);
 	}
+	public int codigoCorrelativo() {
+		if (tamanio() == 0)
+			return 20001;
+		else
+			return obtener(tamanio()-1).getCodAlumno() + 1;
+	}
 }

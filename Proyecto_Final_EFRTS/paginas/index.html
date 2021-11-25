@@ -32,15 +32,15 @@
                 <a href="index.html" class="enlaces">Inicio</a>
                 <a href="nosotros.html" class="enlaces">Nosotros</a>
                 <a href="lugares.html" class="enlaces">Lugares</a>
-                <a href="" class="enlaces">Paquetes</a>
-                <a href="" class="enlaces">Blog</a>
-                <a href="" class="enlaces">Contáctanos</a>
+                <a href="paquetes.html" class="enlaces">Paquetes</a>
+                <a href="blog.html" class="enlaces">Blog</a>
+                <a href="contactanos.html" class="enlaces">Contáctanos</a>
             </ol>
             
         </nav>
     </header>
     <div>
-        <div id="carrusel">
+        <div id="carrusel" style="margin-top: 100px;">
             <img id="banner" name="imgs" src="../img/CarruselIndex/Arequipa.jpg" alt="Imagen no encontrada">
             <div class="posicion-banner">
                 <h1 id="titulobanner">Arequipa</h1>
@@ -53,16 +53,16 @@
         <div>
             <div class="centrar" style="margin: 50px 0 0 0;">
                 <img class="index-img" src="../img/Los Uros_recortado.jpg" alt="">
-                <button class="boton-img" >Saber más</button>
+                <button class="boton-img" onclick="goPuno()">Saber más</button>
             </div>
             <div class="centrar">
                 <img class="index-img" src="../img/Lima-recortado.jpg" alt="">
-                <button class="boton-img" >Saber más</button>
+                <button class="boton-img" onclick="goLima()">Saber más</button>
             </div>
             <div class="centrar">
                 
                 <img class="index-img" src="../img/Tacna-recortado.jpg" alt="">
-                <button class="boton-img" >Saber más</button>
+                <button class="boton-img" onclick="goTacna()">Saber más</button>
             </div>
         </div>
 
@@ -70,14 +70,12 @@
         <div id="blog-index">
             
             <div class="blog-vertical sombreado flex-vertical">
-                <h1 class="centrar-texto">Titulo</h1>
-                <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Qui nulla laborum exercitationem dolores necessitatibus cum consequuntur, enim, eius dignissimos sint, accusantium perferendis laudantium dolorem quae illum rerum minima.
-                    Asperiores, ex?
+                <h1 class="centrar-texto">Fiesta del Sol</h1>
+                <p class="parrafo">Cusco se prepara para vivir la Fiesta del Sol brillando para el mundo, el Inti Raymi del Bicentenario, que este año se realizará el jueves 24 de junio en el Complejo Arqueológico de Sacsayhuamán, sin la presencia del público, así lo informó el ministro de Cultura, Alejandro Neyra.
                 </p>
                 <div class="blog-flecha flex-horinzotal">
                     <h5 style="margin: 10px 10px 0 0">Saber más</h5>
-                    <a href="#" class="enlaces">
+                    <a href="blog.html#inti" class="enlaces">
                         
                         <i class="fa fa-arrow-right" style="font-size: 35px"></i>
                     </a>
@@ -87,64 +85,61 @@
 
             <div>
                 <div class="blog-horinzotal sombreado flex-vertical">
-                    <h1 class="centrar-texto">Titulo</h1>
-                    <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Qui nulla laborum exercitationem dolores necessitatibus cum consequuntur, enim, eius dignissimos sint, accusantium perferendis laudantium dolorem quae illum rerum minima.
-                        Asperiores, ex?
+                    <h1 class="centrar-texto">Carnaval de Cajamarca</h1>
+                    <p class="parrafo">El Carnaval en Cajamarca, es una celebración popular que ocurre 40 días antes del miércoles de ceniza en la localidad de Cajamarca, capital de la provincia que lleva el mismo nombre. La fecha de su realización es de tipo móvil y es considerada una de las fiestas más grandes, alegres y esperadas en Perú. 
                     </p>
                     <div class="blog-flecha ">
                         <h5 style="margin: 10px 10px 0 0">Saber más</h5>
-                        <a href="#" class="enlaces">
+                        <a href="blog.html#carnaval" class="enlaces">
                             
                             <i class="fa fa-arrow-right" style="font-size: 35px"></i>
                         </a>
                     </div>
                 </div>
-                <div class="blog-horinzotal sombreado">
-                    <div class="blog-horinzotal sombreado flex-vertical">
-                        <h1 class="centrar-texto">Titulo</h1>
-                        <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Qui nulla laborum exercitationem dolores necessitatibus cum consequuntur, enim, eius dignissimos sint, accusantium perferendis laudantium dolorem quae illum rerum minima.
-                            Asperiores, ex?
-                        </p>
-                        <div class="blog-flecha ">
-                            <h5 style="margin: 10px 10px 0 0">Saber más</h5>
-                            <a href="#" class="enlaces">
-                                
-                                <i class="fa fa-arrow-right" style="font-size: 35px"></i>
-                            </a>
-                        </div>
+                
+                <div class="blog-horinzotal sombreado flex-vertical">
+                    <h1 class="centrar-texto">Semana Santa</h1>
+                    <p class="parrafo">La Semana Santa en Ayacucho es la festividad religiosa y cultural más importante de esta ciudad y constituye una de las muestras de fe y sincretismo religioso más destacadas de Latinoamérica.1​ De origen español y realizada con variaciones desde la época virreinal
+                    </p>
+                    <div class="blog-flecha ">
+                        <h5 style="margin: 10px 10px 0 0">Saber más</h5>
+                        <a href="blog.html#ayacucho" class="enlaces">
                         
+                            
+                            <i class="fa fa-arrow-right" style="font-size: 35px"></i>
+                        </a>
                     </div>
+                    
                 </div>
+            
             </div>
         </div>
 
 
-            <footer>
-                <div id="logo">
-                    <img src="../img/Logo-sinfondo.png" alt="Imagen no encontrada">
+        <footer>
+            <div id="logo">
+                <img src="../img/Logo-sinfondo.png" alt="Imagen no encontrada">
+            </div>
+            <div class="flex-vertical" style="margin: -20px;">
+                <a class="enlaces nav_footer" href="index.html">Inicio</a>
+                <a class="enlaces nav_footer" href="nosotros.html">Nosotros</a>
+                <a class="enlaces nav_footer" href="paquetes.html">Paquetes</a>
+            </div>
+            <div class="flex-vertical">
+                <a class="enlaces nav_footer" href="blog.html">Blog</a>
+                <a class="enlaces nav_footer" href="contactanos.html">Contáctanos</a>
+            </div>
+            <div class="flex-vertical">
+                <h2>Redes Sociales</h2>
+                <div class="flex-horinzotal redes">
+                    <a href="" class="enlaces"><i class="fa fa-twitter-square"></i></a>
+                    <a href="" class="enlaces"><i class="fa fa-facebook-official"></i></a>
+                    <a href="" class="enlaces"><i class="fa fa-snapchat-square"></i></a>
+                    <a href="" class="enlaces"><i class="fa fa-share-alt-square"></i></a>
                 </div>
-                <div class="flex-vertical" style="margin: -20px;">
-                    <a class="enlaces nav_footer" href="#">Inicio</a>
-                    <a class="enlaces nav_footer" href="#">Nosotros</a>
-                    <a class="enlaces nav_footer" href="#">Paquetes</a>
-                </div>
-                <div class="flex-vertical">
-                    <a class="enlaces nav_footer" href="#">Blog</a>
-                    <a class="enlaces nav_footer" href="#">Contáctanos</a>
-                </div>
-                <div class="flex-vertical">
-                    <h2>Redes Sociales</h2>
-                    <div class="flex-horinzotal redes">
-                        <a href="" class="enlaces"><i class="fa fa-twitter-square"></i></a>
-                        <a href="" class="enlaces"><i class="fa fa-facebook-official"></i></a>
-                        <a href="" class="enlaces"><i class="fa fa-snapchat-square"></i></a>
-                        <a href="" class="enlaces"><i class="fa fa-share-alt-square"></i></a>
-                    </div>
 
-                </div>
-            </footer>
+            </div>
+        </footer>
 
     </div>
 </body>

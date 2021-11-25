@@ -9,6 +9,10 @@
     <link rel="shortcut icon" href="../img/Logo_pequeño_sin fondo.png" >
     <!--El CDN de W3School-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="header">
@@ -33,8 +37,8 @@
                 <a href="nosotros.html" class="enlaces">Nosotros</a>
                 <a href="lugares.html" class="enlaces">Lugares</a>
                 <a href="paquetes.html" class="enlaces">Paquetes</a>
-                <a href="" class="enlaces">Blog</a>
-                <a href="" class="enlaces">Contáctanos</a>
+                <a href="blog.html" class="enlaces">Blog</a>
+                <a href="contactanos.html" class="enlaces">Contáctanos</a>
             </ol>
             
         </nav>
@@ -43,36 +47,267 @@
     <div id="content_paquetes">
         <h1>PAQUETES</h1>
         <section class="div_avion">
-            <img src="../img/Paquetes/Avion.jpg" alt="">
+            <a href=""><img src="../img/Paquetes/Avion.jpg" alt=""></a>
             <h2>AVIÓN</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Cum laborum, eligendi totam deserunt necessitatibus suscipit 
-                voluptatum dignissimos corrupti veniam nam enim. 
-                Expedita facilis corporis consequuntur doloribus beatae nisi 
-                totam sunt.</p>
+            <p>Sin ninguna preocupación, viaja con las empresas más seguras
+                de a nivel mundial con grandes extandares de requirimientos. <br>
+                <strong>"Viajar seguro es vivir feliz"</strong>
+            </p>
         </section>
         <section class="div_hotel">
-            <img src="../img/Paquetes/Hotel.jpg" alt="">
+            <a href=""><img src="../img/Paquetes/Hotel.jpg" alt=""></a>
             <h2>HOTELES</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Cum laborum, eligendi totam deserunt necessitatibus suscipit 
-                voluptatum dignissimos corrupti veniam nam enim. 
-                Expedita facilis corporis consequuntur doloribus beatae nisi 
-                totam sunt.</p>
+            <p>Hoteles muy reconocidos, cumpliendo con los estandares del gobierno
+                y supervisados por nosotros. <br>
+                <strong>"Cuanto más partidarios tengas, menos anuncio vas a pagar"</strong>
+            </p>
         </section>
     </div>
+
+
+
+    <div class="container-fluid">
+        <div class="container">
+    
+        
+        <div class="row mt-5 d-flex justify-content-center align-content-center align-items-center align-self-center">
+        <div class="col-2">
+            <span>Destino</span>
+            <span>Lima, Perú</span>
+        </div>
+        <div class="col-2">
+            <span>Tarifas</span>
+        </div>
+        <div class="col-2" style="border-right:1px solid rgba(0,0,0,0.3)">
+            <span>Fecha de estancia</span>
+            <span>Registro de llegada - registro de salida</span>
+        </div>
+        <div class="col-2">
+            <span>Habitaciones - huespedes</span>
+        </div>
+        <div class="col-2">
+        <button type="button" class="btn btn-primary">Buscar habitaciones</button>
+        </div>
+        </div>
+        
+        
+            
+        
+        <div class="row border p-3 mt-4 d-flex align-content-center align-items-center align-self-center">
+        <div class="col-2">
+            <img style="width:50px;border:1px solid rgba(0,0,0,0.2);margin-right:15px"src="https://solandbeach.com/wp-pagina5/wp-content/uploads/woocommerce-placeholder.png">
+            <span>Marriot Bonvoy</span>
+        </div>
+        <div class="col-2">
+            <span>Lima, Perú</span>
+        </div>
+        <div class="col-3" style="border-right:1px solid rgba(0,0,0,0.3)">
+            <span>$200/noche/1 persona</span>
+            <span>Vie 17 Dic. 2021 - Lun 20 Dic. 2021</span>
+        </div>
+        <div class="col-5">
+            <span style="font-size:23px;text-align:center;display:flex;justify-content: center;">1 Habitacion: 1 adultos/habitacion</span>
+        </div>
+        </div>
+        
+        
+        <div class="row border p-3 d-flex align-content-center align-items-center align-self-center">
+        <div class="col-2">
+            <img style="width:50px;border:1px solid rgba(0,0,0,0.2);margin-right:15px" >
+            <span>Villa Sillar</span>
+        </div>
+        <div class="col-2">
+            <span>Lima, Perú</span>
+        </div>
+        <div class="col-3" style="border-right:1px solid rgba(0,0,0,0.3)">
+            <span>$500/noche/3 personas</span>
+            <span>Lunes 1 Ener. 2021 - Viernes - 5 Ener. 2021</span>
+        </div>
+        <div class="col-5">
+            <span style="font-size:23px;text-align:center;display:flex;justify-content: center;">2 Habitacion: 3 adultos/habitacion</span>
+        </div>
+        </div>
+        
+        
+        <div class="row border p-3 d-flex align-content-center align-items-center align-self-center">
+        <div class="col-2">
+            <img style="width:50px;border:1px solid rgba(0,0,0,0.2);margin-right:15px" src="https://solandbeach.com/wp-pagina5/wp-content/uploads/woocommerce-placeholder.png">
+            <span>Riviera Mansion</span>
+        </div>
+        <div class="col-2">
+            <span>Lima, Perú</span>
+        </div>
+        <div class="col-3" style="border-right:1px solid rgba(0,0,0,0.3)">
+            <span>$400/noche/2 personas</span>
+            <span>Lunes 1 Ener. 2021 - Viernes - 5 Ener. 2021</span>
+        </div>
+        <div class="col-5">
+            <span style="font-size:23px;text-align:center;display:flex;justify-content: center;">1 Habitacion: 2 adultos/habitacion</span>
+        </div>
+        </div>
+        
+        
+        <div class="row border p-3 d-flex align-content-center align-items-center align-self-center">
+        <div class="col-2">
+            <img style="width:50px;border:1px solid rgba(0,0,0,0.2);margin-right:15px"src="https://solandbeach.com/wp-pagina5/wp-content/uploads/woocommerce-placeholder.png">
+            <span>Golden Incahotel</span>
+        </div>
+        <div class="col-2">
+            <span>Lima, Perú</span>
+        </div>
+        <div class="col-3" style="border-right:1px solid rgba(0,0,0,0.3)">
+            <span>$600/noche/4 personas</span>
+            <span>Lunes 1 Ener. 2021 - Viernes - 5 Ener. 2021</span>
+        </div>
+        <div class="col-5">
+            <span style="font-size:23px;text-align:center;display:flex;justify-content: center;">1 Habitacion: 4 adultos/habitacion</span>
+        </div>
+        </div>
+        
+        
+        
+        </div>
+        
+        
+        
+        
+        <div class="container-fluid" style="margin-top: 200px;">
+            <div class="container">
+        
+        <div class="row">
+        <div class="col-4 text-center lead" style="font-weight: bold;">
+            ¿A donde viajas?
+        </div>
+        <div class="col-4  text-center lead"style="font-weight: bold;">
+        ¿Cuando viajas?
+        </div>
+        <div class="col-4 text-center lead"style="font-weight: bold;">
+        ¿Como viajas?
+        </div>
+        </div>
+        
+        <div class="row mt-5 d-flex justify-content-center align-content-center align-items-center align-self-center">
+        <div class="col-2">
+            <span>Desde</span><br>
+            <span class="sup">Lima</span>
+        </div>
+        <div class="col-2"><br>
+            <span  class="sup">Horas</span>
+        </div>
+        <div class="col-1"><br>
+            <span class="sup">Salida</span>
+        </div>
+        <div class="col-1"><br>
+            <span class="sup">Vuelta</span>
+        </div>
+        <div class="col-2">
+            <span>Pasajeros</span><br>
+            <span class="sup">1 adulto, economico</span>
+        </div>
+        <div class="col-2">
+        <button type="button" class="btn btn-primary">Buscar vuelo</button>
+        </div>
+        </div>
+        
+        
+            
+        
+        <div class="row border p-3 mt-4 d-flex align-content-center align-items-center align-self-center">
+        <div class="col-2">
+            <img style="width:50px;border:1px solid rgba(0,0,0,0.2);margin-right:15px" src="../img/Paquetes/latam_sin fondo.png">
+            <span>Latam</span>
+        </div>
+        <div class="col-2">
+            <span>Ida. LIM-CUZ<br>
+        juev. 2 Dic. 2021<br>
+        14:00-directo
+        </span>
+        </div>
+        <div class="col-3" >
+            <span>jue. 9 dic. 2021<br>
+        7:00-directo</span>
+        </div>
+        <div class="col-2" style="border-right:1px solid rgba(0,0,0,0.3);font-weight: bold; font-size:20px;text-align: center;">
+            <span><b>6 dias</b></span>
+        </div>
+        <div class="col-3">
+        <div style="font-size:17px;text-align:center;"> desde<br>
+                <span><b>$90</b></span>
+                <br><span style="color:blue;">siguiente</span></div>
+        </div>
+        </div>
+        
+        
+        <div class="row border p-3 d-flex align-content-center align-items-center align-self-center">
+        <div class="col-2">
+            <img style="width:50px;border:1px solid rgba(0,0,0,0.2);margin-right:15px" src="../img/Paquetes/Aeromexico_sin fondo.png">
+            <span>Aeromexico</span>
+        </div>
+        <div class="col-2">
+            <span>Ida. LIM-Arequi<br>
+        Vie. 24 Dic. 2021<br>
+        13:00-directo</span>
+        </div>
+        <div class="col-3">
+            <span>Vuelta AREQUI-LIMA<br>
+        Mart. 28 Dic. 2021<br>
+        17:00-directo</span>
+        </div>
+        <div class="col-2" style="border-right:1px solid rgba(0,0,0,0.3);font-weight: bold; font-size:20px;text-align: center;">
+            <span><b>4 dias</b></span>
+        </div>
+        <div class="col-3">
+        <div style="font-size:17px;text-align:center;"> desde<br>
+                <span><b>$80</b></span>
+                <br><span style="color:blue;">siguiente</span></div>
+        </div>
+        </div>
+        
+        
+        <div class="row border p-3 d-flex align-content-center align-items-center align-self-center">
+        <div class="col-2">
+            <img style="width:50px;border:1px solid rgba(0,0,0,0.2);margin-right:15px" src="../img/Paquetes/British airways_sin fondo.png">
+            <span>British Airways</span>
+        </div>
+        <div class="col-2">
+            <span>Ida. CUZ-AREQUI<br>
+        Vie. 27 Dic. 2021<br>
+        18:00-directo</span>
+        </div>
+        <div class="col-3" >
+            <span>Vuelta AREQUI-CUZ<br>
+        Lun. 30 Dic. 2021<br>
+        20:00-directo</span>
+        </div>
+        <div class="col-2" style="border-right:1px solid rgba(0,0,0,0.3);font-weight: bold; font-size:20px;text-align: center;">
+            <span><b>3 dias</b></span>
+        </div>
+        <div class="col-3">
+            <div style="font-size:17px;text-align:center;"> desde<br>
+                <span><b>$85</b></span>
+                <br><span style="color:blue;">siguiente</span></div>
+        </div>
+        </div>
+        
+        
+   
+    
+    </div>
+    
+    
+    
     <footer>
         <div id="logo">
             <img src="../img/Logo-sinfondo.png" alt="Imagen no encontrada">
         </div>
         <div class="flex-vertical" style="margin: -20px;">
-            <a class="enlaces" href="#">Inicio</a>
-            <a class="enlaces" href="#">Nosotros</a>
-            <a class="enlaces" href="#">Paquetes</a>
+            <a class="enlaces nav_footer" href="index.html">Inicio</a>
+            <a class="enlaces nav_footer" href="nosotros.html">Nosotros</a>
+            <a class="enlaces nav_footer" href="paquetes.html">Paquetes</a>
         </div>
         <div class="flex-vertical">
-            <a class="enlaces" href="#">Blog</a>
-            <a class="enlaces" href="#">Contáctanos</a>
+            <a class="enlaces nav_footer" href="blog.html">Blog</a>
+            <a class="enlaces nav_footer" href="contactanos.html">Contáctanos</a>
         </div>
         <div class="flex-vertical">
             <h2>Redes Sociales</h2>
@@ -84,7 +319,6 @@
             </div>
 
         </div>
-        <noscript>Sin script, la pagina se vera deforme</noscript>
     </footer>
 
 </body>

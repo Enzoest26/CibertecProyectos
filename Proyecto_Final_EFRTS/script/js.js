@@ -49,3 +49,15 @@ window.document.onload(indexCarrusel());
 
 //Efecto del scroll
 
+function goArequipa(){
+    window.location = "lugares.html#arequipa";
+}
+function goPuno(){
+    window.location = "lugares.html#puno";
+}
+function goLima(){
+    window.location = "lugares.html#lima";
+}
+function goTacna(){
+    window.location = "lugares.html#tacna";
+}

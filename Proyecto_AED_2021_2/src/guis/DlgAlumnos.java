@@ -267,6 +267,7 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 		btnAccion.setText("Adicionar");
 		btnBuscar.setEnabled(false);
 		btnBuscar.setText("");
+		limpieza();
 	}
 	protected void actionPerformedBtnModificar(ActionEvent e) {
 		indexBoton = MODIFICAR;
@@ -331,7 +332,7 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 	
 	
 	void limpieza() {
-		txtCodigo.setText("");
+		txtCodigo.setText("" + aa.codigoCorrelativo());
 		txtNombre.setText("");
 		txtApellidos.setText("");
 		txtDNI.setText("");
@@ -497,8 +498,5 @@ public class DlgAlumnos extends JDialog implements ActionListener {
 		btnAccion.setEnabled(!condicional);
 	}
 	
-	public boolean validarNumeros(String datos) {
-		return datos.matches("[a-zA-Z]");
-	}
 }
 

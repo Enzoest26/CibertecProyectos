@@ -13,6 +13,11 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import java.awt.Toolkit;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import java.awt.Font;
+import java.awt.SystemColor;
+import java.awt.Color;
+import javax.swing.JLabel;
 
 public class Proyecto_AED_2021_II extends JFrame implements ActionListener{
 
@@ -33,6 +38,13 @@ public class Proyecto_AED_2021_II extends JFrame implements ActionListener{
 	private JMenuItem mntmAlumnosMatriculaVigente;
 	private JMenuItem mntmAlumnosMatriculaCurso;
 	private JMenuItem mntmMatriculaRetiro;
+	private JButton btnAlumnos;
+	private JButton btnCursos;
+	private JButton btnAlumnosCursos;
+	private JButton btnMatriculaRetiro;
+	private JLabel lblTitulo;
+	private JLabel lblTituloImg;
+	private JLabel lblFondo;
 
 	/**
 	 * Launch the application.
@@ -58,7 +70,7 @@ public class Proyecto_AED_2021_II extends JFrame implements ActionListener{
 		setIconImage(Toolkit.getDefaultToolkit().getImage(Proyecto_AED_2021_II.class.getResource("/img/JUPITER_SCHOOL_MINI_sin fondo.png")));
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 800, 600);
+		setBounds(100, 100, 800, 467);
 		
 		menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
@@ -128,9 +140,55 @@ public class Proyecto_AED_2021_II extends JFrame implements ActionListener{
 		mntmAlumnosMatriculaCurso.addActionListener(this);
 		mnReporte.add(mntmAlumnosMatriculaCurso);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(173, 216, 230));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		btnAlumnos = new JButton("Alumnos");
+		btnAlumnos.setBackground(SystemColor.controlHighlight);
+		btnAlumnos.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/iconos/escolar.png")));
+		btnAlumnos.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnAlumnos.setBounds(66, 173, 184, 53);
+		contentPane.add(btnAlumnos);
+		
+		btnAlumnosCursos = new JButton("Alumnos y Cursos");
+		btnAlumnosCursos.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/iconos/buscar.png")));
+		btnAlumnosCursos.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnAlumnosCursos.setBackground(SystemColor.controlHighlight);
+		btnAlumnosCursos.setBounds(510, 173, 205, 53);
+		contentPane.add(btnAlumnosCursos);
+		
+		btnCursos = new JButton("Cursos");
+		btnCursos.setBackground(SystemColor.controlHighlight);
+		btnCursos.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/iconos/cursos.png")));
+		btnCursos.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnCursos.setBounds(66, 287, 184, 53);
+		contentPane.add(btnCursos);
+		
+		btnMatriculaRetiro = new JButton("Matricula y Retiro");
+		btnMatriculaRetiro.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/iconos/buscar.png")));
+		btnMatriculaRetiro.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnMatriculaRetiro.setBackground(SystemColor.controlHighlight);
+		btnMatriculaRetiro.setBounds(510, 287, 205, 53);
+		contentPane.add(btnMatriculaRetiro);
+		
+		lblTitulo = new JLabel("JUPITER SCHOOL");
+		lblTitulo.setForeground(Color.ORANGE);
+		lblTitulo.setBackground(new Color(255, 0, 0));
+		lblTitulo.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 40));
+		lblTitulo.setBounds(220, 47, 335, 65);
+		contentPane.add(lblTitulo);
+		
+		lblTituloImg = new JLabel("");
+		lblTituloImg.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/JUPITER_SCHOOL_sin fondo_2.png")));
+		lblTituloImg.setBounds(284, 161, 205, 192);
+		contentPane.add(lblTituloImg);
+		
+		lblFondo = new JLabel("");
+		lblFondo.setIcon(new ImageIcon(Proyecto_AED_2021_II.class.getResource("/img/Fondo_2.jpg")));
+		lblFondo.setBounds(0, 0, 784, 406);
+		contentPane.add(lblFondo);
 	}
 	
 	public void actionPerformed(ActionEvent e) {
